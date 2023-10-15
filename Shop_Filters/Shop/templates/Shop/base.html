@@ -8,12 +8,11 @@
 </head>
 
 
-<body class="d-flex h-100 text-center text-bg-dark">
-
-  <div class="cover-container p-3 mx-auto flex-column">
+<body class=" text-center text-white bg-dark">
+  <div class="cover-container bg-dark p-3 mx-auto flex-column">
     <nav  class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
         <div class="container-fluid ">
-          <a class="navbar-brand mb-3" href="{% url "index" %}">Shop</a>
+          <a class="navbar-brand mb-2" href="{% url "index" %}">Shop</a>
           <div class="collapse navbar-collapse" id="navbarsExample02">
             <ul class=" d-flex navbar-nav me-auto">
              <li class="nav-item">
@@ -24,11 +23,9 @@
           </div>
         </div>
       </nav>
-
-
+  </div>
     {% block content %}
 
     {% endblock %}
-  </div>
 </body>
 </html>
